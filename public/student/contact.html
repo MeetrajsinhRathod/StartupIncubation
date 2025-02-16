@@ -1,0 +1,171 @@
+<doctype html>
+	<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Form</title>
+		<link rel="stylesheet" type="text/css" href="contact.css" />
+		<link rel="stylesheet" href="home.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous" />
+
+		<!-- <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script> -->
+	</head>
+
+	<body>
+		<nav class="nav">
+			<input id="nav-toggle" type="checkbox">
+			<div class="logo">
+				<img src="edic logo.jpg" alt="edic">
+				<h1><strong><a href="home.html">EDIC</a></strong></h1>
+			</div>
+			<ul class="links">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="startups.html">Startups</a></li>
+				<li><a href="apply.html" class="applyPage" style="display: none;">Apply</a></li>
+				<li><a href="contact.html" class="active">Contact</a></li>
+			</ul>
+			<ul>
+				<li class="btn2 logged-out" style="display: none;">
+					<a href="login.html">Sign in/Sign up</a>
+				</li>
+			</ul>
+			<div class="usr logged-in">
+				<div class="btn" id="user">
+					<a class="D"><i class="fa fa-user"></i></a>
+
+				</div>
+				<div class="drop">
+					<a class="D1" id="dash">Dashboard</a>
+					<a href="#" id="logout">Log-out</a>
+				</div>
+			</div>
+
+			<label for="nav-toggle" class="icon-burger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</label>
+		</nav>
+
+		<section class="contact">
+			<ul class="btnwrap">
+				<li class="btn1 logged-out-res">
+					<a href="login.html">Sign in/Sign up</a>
+				</li>
+			</ul>
+			<div class="contact_cont">
+				<div class="contactinfo">
+					<div class="box">
+						<div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+						<div class="text">
+							<h3>Address</h3>
+							<p>
+								Charotar University of Science & Technology,<br>
+								CHARUSAT Campus<br>
+								Off. Nadiad-Petlad Highway, <br>Changa 388 421<br>
+								Anand, Gujarat, INDIA<br>
+							</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="fas fa-envelope"></i></i></div>
+						<div class="text">
+							<h3>Email</h3>
+							<p>
+								edic@charusat.ac.in 
+							</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="fas fa-envelope"></i></i></div>
+						<div class="text">
+							<h3>Phone Number</h3>
+							<p>
+								02697-265011 / 02697-265021
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="contact-form">
+					<form action="https://formcarry.com/s/F4l5NM0mc6f" method="POST">
+						<h2>Get In Touch</h2>
+						<div class="inputbox">
+							<input type="text" name="ID" required="required">
+							<span>ID. NO.</span>
+						</div>
+						<div class="inputbox">
+							<input type="email" name="e-mail" required="required">
+							<span>Email</span>
+						</div>
+						<div class="inputbox">
+							<textarea name="Message"  cols="30" rows="5" required="required"></textarea>
+							<span>Your Message</span>
+						</div>
+						<div class="inputbox">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p id="footer_info"><i class="fas fa-phone-alt"> &nbsp;02697-265011 <b id="slash">/</b> 02697-265021</i> <i
+					class="fa fa-envelope"> &nbsp;edic@charusat.ac.in</i></p>
+			<hr>
+
+			<p id="icon"><a href="https://www.facebook.com/thecharusat/" target="_blank"><i
+						class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/thecharusat?lang=en" target="_blank"><i
+						class="fab fa-twitter-square"></i></a>
+				<a href="https://www.linkedin.com/school/charotar-university-of-science-&-technology-charusat-/"
+					target="_blank"><i class="fab fa-linkedin"></i></a>
+			</p>
+			<hr>
+			<p id="cc"> © 2021 EDIC </p>
+		</footer>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+		<script>
+			// Your web app's Firebase configuration
+			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+			var firebaseConfig = {
+				apiKey: "AIzaSyBOc0r3Th6azEmwTIIIeVhjs20fXps0Bxg",
+				authDomain: "startupmanagementsystem.firebaseapp.com",
+				projectId: "startupmanagementsystem",
+				storageBucket: "startupmanagementsystem.appspot.com",
+				messagingSenderId: "84477079788",
+				appId: "1:84477079788:web:0c0beb5c5a26794ab9b5c9",
+				measurementId: "G-9VRZH1XNN6"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();
+
+
+			//auth and firestore references
+			const auth = firebase.auth();
+			const db = firebase.firestore();
+
+			//update firestore settings
+			db.settings({ timestampsInSnapshots: true });
+
+		</script>
+
+
+		<script src="auth.js"></script>
+		<script src="home.js"></script>
+		<script src="login.js"></script>
+
+
+	</body>
+
+	</html>

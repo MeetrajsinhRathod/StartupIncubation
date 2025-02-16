@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/student/home.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons/user?style=solid">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    
+    <!-- navigation bar here-->
+    <div class="wrap">
+        <img src="" alt="#" class="bimg">
+        <nav class="nav">
+            <input id="nav-toggle" type="checkbox">
+            <div class="logo">
+                <img src="/student/edic logo.jpg" alt="edic">
+                <h1><strong><a href="/student/home.html">EDIC</a></strong></h1>
+            </div>
+            <ul class="links">
+                <li><a href="/student/home.html" >Home</a></li>
+                <li><a href="/student/about.html">About</a></li>
+                <li><a href="/student/startups.html">Startups</a></li>
+                <li><a href="/student/contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li class="btn2 logged-out" style="display: none;">
+                    <a href="/student/login.html">Sign in/Sign up</a>
+                </li>
+            </ul>
+            
+            <div class="usr logged-in">
+                <div class="btn" id="user">
+                    <a class="D"><i class="fa fa-user"></i></a>
+                    
+                </div>
+                <div class="drop">
+                    <a class="D1" id="dash">Dashboard</a>
+                    <a href="#" id="logout">Log-out</a>
+                </div>
+            </div>    
+            
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+        <div class="wraphead">
+            <div class="head">Admin Dashboard </div>
+        </div>
+    </div>
+   
+    <!-- Boxes here-->
+    <div class="admin_ctn">
+        <div class="myBoxCtn"> 
+            <form class="myForm text-center formh">
+                <header>Add HOD</header>
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input class="myInput" type="text" placeholder="Name" id="usernameh" required> 
+                </div>
+
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input class="myInput" placeholder="Email" type="email" id="emailh" required> 
+                </div>
+
+                <div class="form-group">
+                    <i class="fas fa-building"></i>
+                    <input class="myInput" placeholder="Department" type="text" id="departmenth" required> 
+                </div>
+
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input class="myInput" type="password" id="passwordh" placeholder="Password" required> 
+                </div>
+
+            <!-- <div class="form-group">
+                <label>
+                    <input id="check_1" name="check_1"  type="checkbox" required><small> I read and agree to Terms & Conditions</small></input> 
+                    <div class="invalid-feedback">You must check the box.</div>
+                </label>
+            </div> -->
+            <div class="buttons">
+                <input type="submit" class="butt" value="Add" id="addh">
+                <input type="button" class="butt" value="Remove" id="removeh">
+            </div>
+            </form>
+        </div>
+            <div class="myBoxCtn"> 
+                <form class="myForm text-center formf">
+                    <header>Add Faculties</header>
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input class="myInput" type="text" placeholder="Name" id="usernamef" required> 
+                    </div>
+    
+                    <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <input class="myInput" placeholder="Email" type="email" id="emailf" required> 
+                    </div>
+    
+                    <div class="form-group">
+                        <i class="fas fa-building"></i>
+                        <input class="myInput" placeholder="Department" type="text" id="departmentf" required> 
+                    </div>
+    
+                    <div class="form-group">
+                        <i class="fas fa-lock"></i>
+                        <input class="myInput" type="password" id="passwordf" placeholder="Password" required> 
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" class="butt" value="Add" id="addf">
+                        <input type="button" class="butt" value="Remove" id="removef">
+                    </div>
+                </form>
+            </div>
+            </div>
+            <div class="ctnwrap">
+                <div class="myBoxCtn1"> 
+                    <form class="myForm text-center forma">
+                        <header>Add Article</header>
+                        <div class="form-group">
+                            <i class="far fa-newspaper"></i>
+                            <input class="myInput" type="text" placeholder="Title" id="titlea" required> 
+                        </div>
+                        <div class="form-group">
+                            <i class="far fa-file-alt"></i>
+                            <textarea class="myInput" placeholder="Content" id="contenta" required rows="5"> </textarea> 
+                        </div>
+                    <div class="buttons">
+                        <input type="submit" class="butt" value="Add News" id="adda">
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <!-- table here -->
+            <div class="admin_recent_grid">
+                <div class="admin_projects">
+                    <div class="admin_card">
+                        <div class="admin_card_header">
+                            <h3>Received Forms For Approvel</h3>
+                            <!-- <button>Read More</button>  -->
+                        </div>
+                        <div class="card_body">
+                            <table width=100%>
+                                <thead>
+                                   <tr>
+                                       <td>Project Title</td>
+                                       <td>Department</td>
+                                       <td>Name</td>
+                                       <td><button>Read More</button></td>
+                                   </tr> 
+                                </thead>
+                                <tbody class="Fdetails">
+                                    <tr>
+                                        <td>Project Title</td>
+                                        <td>Department</td>
+                                        <td> Status</td>
+                                        <td><button><b>Read More</b></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Project Title</td>
+                                        <td>Department</td>
+                                        <td> Status</td>
+                                        <td><button><b>Read More</b></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Project Title</td>
+                                        <td>Department</td>
+                                        <td> Status</td>
+                                        <td><button><b>Read More</b></button></td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p id="footer_info"><i class="fas fa-phone-alt"> &nbsp;02697-265011 <b id="slash">/</b> 02697-265021</i> <i
+                        class="fa fa-envelope"> &nbsp;edic@charusat.ac.in</i></p>
+                <hr>
+        
+                <p id="icon"><a href="https://www.facebook.com/thecharusat/" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/thecharusat?lang=en" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/school/charotar-university-of-science-&-technology-charusat-/"
+                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                </p>
+                <hr>
+                <p id="cc"> © 2021 EDIC </p>
+            </footer>
+
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+    
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyBOc0r3Th6azEmwTIIIeVhjs20fXps0Bxg",
+          authDomain: "startupmanagementsystem.firebaseapp.com",
+          projectId: "startupmanagementsystem",
+          storageBucket: "startupmanagementsystem.appspot.com",
+          messagingSenderId: "84477079788",
+          appId: "1:84477079788:web:0c0beb5c5a26794ab9b5c9",
+          measurementId: "G-9VRZH1XNN6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+       
+      
+        //auth and firestore references
+        const auth = firebase.auth();
+        const auth2 = firebase.auth();
+        const db = firebase.firestore();
+      
+        //update firestore settings
+        db.settings({ timestampsInSnapshots : true});
+      
+      </script>
+      
+      <script src="/admin/admin.js"></script>
+      <script src="/student/home.js"></script>
+      <script src="/student/auth.js"></script>
+
+</body>
+</html>

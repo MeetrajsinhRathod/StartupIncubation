@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+html,body{
+	
+	background-color: #f4f6f7;
+	font-family: 'Varela Round', sans-serif;
+overflow-x: hidden;
+margin: 0px;
+padding: 0px;
+height: 100%;
+box-sizing: border-box;
+}
+nav .btn{
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+.usr{
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  justify-content: center;
+  align-items: center;
+}
+.btn i{
+    font-size: 42px;
+}
+ .drop{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.7s ease-in-out;
+}
+.drop a{
+  color: black;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left:10px ;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+.drop a:hover{
+  color: rgb(99, 99, 99);
+}
+.drop #log_out{
+  padding-bottom: 20px;
+}
+#user{
+   margin: 6px 0px;
+}
+.usr:hover .drop{
+  visibility:visible;
+  opacity: 1;
+}
+.admin_wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.wraphead{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #21D4FD;
+	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+	position: relative;
+  font-size: 40px;
+  color: white;
+	height: auto;
+}
+.wraphead .head{
+  padding-top: 140px;
+  padding-bottom: 40px;
+}
+
+.admin_ctn {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  } 
+
+  .myBoxCtn {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 25px;
+    margin: 50px ;
+    height: auto;
+    width: 40%;
+    box-shadow: 10px 10px 40px 10px rgb(0, 0, 0, 0.10);
+  }
+  .myBoxCtn header {
+    text-align: center;
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .myBoxCtn1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 25px;
+    margin: 50px ;
+    height: auto;
+    width: 30%;
+    box-shadow: 10px 10px 40px 10px rgb(0, 0, 0, 0.10);
+  }
+  .myBoxCtn1 header {
+    text-align: center;
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .ctnwrap{
+    display: flex;
+    width:auto;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+  }
+  .myForm .buttons{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .myBoxCtn .myInput {
+    width: 300px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+  }
+  .myBoxCtn .myInput:focus {
+    outline: none;
+  } 
+
+  .myBoxCtn .butt {
+    background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    color: #fff;
+    width: 142px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    margin: 0 10px;
+  } 
+  .myBoxCtn .butt:hover {
+    background: linear-gradient(19deg,#B721FF 0%, #21D4FD 100%);
+  }
+  .myBoxCtn .butt:focus {
+    outline: none;
+  } 
+  .myBoxCtn .fas {
+    position: relative;
+    color: #bb36fd;
+    left: 36px;
+  } 
+
+  .myBoxCtn1 .myInput {
+    width: 300px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+  }
+  .myBoxCtn1 .myInput:focus {
+    outline: none;
+  } 
+
+  .myBoxCtn1 .butt {
+    background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    color: #fff;
+    width: 142px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    margin: 0 10px;
+  } 
+  .myBoxCtn1 .butt:hover {
+    background: linear-gradient(19deg,#B721FF 0%, #21D4FD 100%);
+  }
+  .myBoxCtn1 .butt:focus {
+    outline: none;
+  } 
+  .myBoxCtn1 .far {
+    position: relative;
+    color: #bb36fd;
+    left: 36px;
+  } 
+
+  .form-group {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+    padding-right: 20px;
+}
+
+.butt_out {
+    background: transparent;
+    color: #fff;
+    width: 120px;
+    border: 2px solid#fff;
+    border-radius: 25px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+  } 
+  .butt_out:hover {
+    border: 2px solid#eecbff;
+  } 
+  .butt_out:focus {
+    outline: none;
+  }
+
+  .myForm {
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+  } 
+
+  table{
+    position: relative;
+    border-collapse:collapse;
+    border-radius: 5px;
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+    }
+
+  .admin_card{
+    border-radius:5px;
+    }
+
+    .admin_card_header,.admin_card_body{
+        padding: 0px 12px;
+        box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+      }
+      
+      .admin_card_header{
+        display:flex;
+        justify-content:space-between;
+        align-items:  center;
+        border-bottom:1px solid #f0f0f0;
+        background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 20px;
+        margin-top: 70px;
+        color: white;
+        /* border-top: 1px solid black; */
+        }
+
+tbody button{
+background: linear-gradient(19deg, #B721FF 0%, #21D4FD 100%);
+border-radius: 5px;
+color:#fff;
+font-size:.8rem;
+padding:.5rem 1rem;
+border: none;
+/* border: 1px solid black; */
+/* box-shadow: 0px 0px 40px -15px rgb(0 0 0 / 70%); */
+}
+
+tbody button:hover {
+  background: linear-gradient(19deg,#21D4FD 0%,#B721FF 100%);
+}
+
+.admin_recent_grid{
+    display: grid;
+    grid-template-columns:90% auto;
+    justify-content: center;
+    }
+
+    .readMore{
+      font-weight:700;
+    }
+    
+    thead tr{
+    border-top:2px solid #f0f0f0;  
+    border-bottom :2px solid #f0f0f0;
+    background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    }
+    
+    thead td{
+      color: white;
+    font-weight:700;
+    }
+    
+    td{
+    padding:1.0rem 8rem;
+    font-size:.9rem;
+    color:#222;
+    border-bottom: 1px solid black;
+    }
+
+    tbody td {
+      padding: 10px 130px;
+   }
+
+   thead button{
+     visibility: hidden;
+   }
+
+   footer{
+     position: relative;
+     margin-top: 100px;
+   }
+
+   .fab{
+    padding: 0px 15px;
+    color: white;
+  }
+    
+  @media (max-width: 1200px){
+    .admin_ctn{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+    .myBoxCtn{
+      width:40%;
+    }
+    .myBoxCtn1{
+      width:32%;
+    }
+  }
+  @media (max-width: 1000px){
+    .myBoxCtn{
+      width:50%;
+    }
+    .myBoxCtn1{
+      width:40%;
+    }
+  }
+  @media (max-width: 700px){
+    .myBoxCtn{
+      width:55%;
+    }
+    .myBoxCtn1{
+      width:50%;
+    }
+  }
+  @media (max-width: 650px){
+    .myBoxCtn{
+      width:60%;
+    }
+    .myBoxCtn1{
+      width:52%;
+    }
+  }
+  @media (max-width: 600px){
+    .myBoxCtn{
+      width:65%;
+    }
+  }
+  @media (max-width: 500px){
+    .wraphead .head{
+      font-size: 35px;
+    }
+    .myBoxCtn{
+      width:70%;
+    }
+    .myBoxCtn1{
+      width:60%;
+    }
+  }
+  @media (max-width: 450px){
+    .myBoxCtn{
+      width:75%;
+    }
+    .myBoxCtn1{
+      width:65%;
+    }
+  }
+  @media (max-width: 400px){
+    .wraphead .head{
+      font-size: 30px;
+    }
+    .myBoxCtn{
+      width:80%;
+    }
+  }

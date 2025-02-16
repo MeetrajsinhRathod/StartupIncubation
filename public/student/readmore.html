@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="apply.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/student/readmore.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <title>Apply</title>
+   </head>
+<body>
+
+  <!-- <div class="formHeight"></div> -->
+  <div class="formtoggle">
+    <div class="pos">
+    <p class="back" onclick="goBack()">x</p>
+    </div>
+    <div class="title">APPLICATION FOR RESEARCH GRANT</div>
+    <div class="content" id="readForm2" class="readForm2">
+      <form  id="applyForm" class="applyForm">
+        <div class="readmoreForm">
+
+        </div>
+            <div class="bwrap">
+            <div class="button1">
+              <input type="button" class="approvBtn" style="display: none;"  id="approvBtn" value="Approv">
+            </div>  
+            <div class="button">
+                <input type="button" class="disapprovBtn" style="display: none;" id="disapprovBtn" value="Disapprov">
+              </div>
+            </div>
+          <div class="bwrap2">
+            <div class="button2">
+              <input type="submit" class="resubmitBtn" style="display: none;  cursor: none;" id="resubmitBtn" value="Resubmit">
+            </div>
+            <div class="button3">
+              <input type="submit" class="dltBtn" style="display: none;  cursor: none;" id="dltBtn" value="Delete Response">
+            </div>
+          </div>
+       
+      </form>
+    </div>
+  </div>
+  <div style="height: 100px;">
+</div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBOc0r3Th6azEmwTIIIeVhjs20fXps0Bxg",
+    authDomain: "startupmanagementsystem.firebaseapp.com",
+    projectId: "startupmanagementsystem",
+    storageBucket: "startupmanagementsystem.appspot.com",
+    messagingSenderId: "84477079788",
+    appId: "1:84477079788:web:0c0beb5c5a26794ab9b5c9",
+    measurementId: "G-9VRZH1XNN6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+ 
+
+  //auth and firestore references
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  //update firestore settings
+  db.settings({ timestampsInSnapshots : true});
+
+</script>
+
+        
+        <script src="/student/readmore.js"></script>
+        <script>
+          function goBack() {
+            window.history.back();
+          }
+          </script>
+      
+
+</body>
+</html>

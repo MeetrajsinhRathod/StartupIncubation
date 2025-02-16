@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="apply.css">
+    <link rel="stylesheet" href="home.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <title>Apply</title>
+   </head>
+<body>
+    <nav class="nav">
+      <input id="nav-toggle" type="checkbox">
+      <div class="logo">
+          <img src="edic logo.jpg" alt="edic">
+          <h1><strong><a href="home.html">EDIC</a></strong></h1>
+      </div>
+      <ul class="links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="startups.html">Startups</a></li>
+          <li><a href="apply.html" class="active applyPage">Apply</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul>
+          <li class="btn2 logged-out" style="display: none;">
+              <a href="login.html">Sign in/Sign up</a>
+          </li>
+      </ul>
+      <div class="usr logged-in">
+        <div class="btn" id="user">
+            <a class="D"><i class="fa fa-user"></i></a>
+            
+        </div>
+        <div class="drop">
+            <a class="D1" id="dash">Dashboard</a>
+            <a href="#" id="logout">Log-out</a>
+        </div>
+    </div>
+      
+      <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </label>
+  </nav>
+  <ul class="btnwrap">
+    <li class="btn1 logged-out-res">
+        <a href="login.html">Sign in/Sign up</a>
+    </li>
+</ul>
+  <h1 class="logged-out" id="logged-out">*You need to be logged-in to fill this form </h1>
+  <h1 class="form-msg" id="form-msg">Your form has been submitted.</h1>
+  <!-- <div class="formHeight"></div> -->
+  <div class="formtoggle">
+    <div class="title">APPLICATION FOR RESEARCH GRANT</div>
+    <div class="content">
+      <form action="#" id="applyForm">
+        
+       <div class="form_section">SECTION–A: SUMMARY OF PROPOSED RESEARCH PROJECT</div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your Full Name" id="a_fullname" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" id="a_email"required>
+          </div>
+          <div class="input-box">
+            <span class="details">Department</span>
+            <input type="text" placeholder="Enter your department name" id="a_department" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Title of research grant</span>
+            <input type="text"  id="a_title_of_research_grant" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Name of the Principal Investigator</span>
+            <input type="text"  id="a_name_of_the_principal_investigator" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Proposed Budget for 1st Year ( In Rupees)</span>
+            <input type="text"  id="a_proposed_budget_for_1st_year" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Provide the outline of your Proposed Solution (Abstract)</span>
+            <input type="text" id="a_provide_the_outline_of_your_proposed_solution" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Project Duration</span>
+            <input type="text" id="a_project_duration"  required>
+          </div>
+          <div class="input-box">
+            <span class="details">Provide a concise background of the project highlighting the problems to be addressed</span>
+            <input type="text" id="a_provide_a_concise_background_of_the_project_highlighting_the_problems_to_be_addressed"required>
+          </div>
+          <div class="input-box">
+            <span class="details">Define the specific research activities along with time-frame to be pursued during Project Period</span>
+            <input type="text"  id="a_define_the_specific_research_activities_along_with_time_frame_to_be_pursued_during_project_period" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Provide a comprehensive description of techniques/technologies to be used</span>
+            <input type="text" id="a_provide_a_comprehensive_description_of_techniques/technologies_to_be_used" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Advantages of suggested Methodological approach</span>
+            <input type="text" id="a_advantages_of_suggested_methodological_approach"  required>
+          </div>
+          <div class="input-box">
+            <span class="details">Available resources</span>
+            <input type="text" id="a_available_resources" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Needed Resources</span>
+            <input type="text" id="a_needed_resources" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Beneficiary of the Project Research Project</span>
+            <input type="text" id="a_beneficiary_of_the_project_research_project" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Briefly describe the technical Deliverables</span>
+            <input type="text" id="a_briefly_describe_the_technical_deliverables" required>
+          </div>
+        </div>
+
+       <div class="form_section">SECTION-B: PERFORMA OF EVALUATION</div>
+      <div class="user-details">
+        <div class="checkbox">
+          <span class="details">Work proposed is original</span>
+          <input type="checkbox" id="a_checkbox_box1" value="Work proposed is original">
+        </div>
+        <div class="checkbox">
+          <span class="details">Useful to the state/university</span>
+          <input type="checkbox" id="a_checkbox_box2" value="Useful to the state/university">
+        </div>
+        <div class="checkbox">
+          <span class="details">Such proposed research work is going elsewhere or not</span>
+          <input type="checkbox" id="a_checkbox_box3" value="Such proposed research work is going elsewhere or not">
+        </div>
+        <div class="checkbox">
+          <span class="details">Possibility of commercialization</span>
+          <input type="checkbox" id="a_checkbox_box4" value="Possibility of commercialization">
+        </div>
+        <div class="checkbox">
+          <span class="details">Possibility of further research</span>
+          <input type="checkbox" id="a_checkbox_box5" value="Possibility of further research">
+        </div>
+        <div class="checkbox">
+          <span class="details">Financial assistance asked is justified</span>
+          <input type="checkbox" id="a_checkbox_box6" value="Financial assistance asked is justified">
+        </div>
+        <div class="checkbox">
+          <span class="details">Any other Comments :</span>
+          <input type="text" id="a_comment" >
+        </div>
+      </div>
+
+        <div class="form_section">SECTION-C: PARTICIPATING RESEARCHERS AND THEIR ROLES</div>
+
+        <div class="underline_title"><u>Name of the Principal Investigator</u></div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" id="a_pi_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Institute Name</span>
+            <input type="text"  id="a_pi_institute_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Qualification</span>
+            <input type="text" id="a_pi_qualification" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Designation</span>
+            <input type="text" id="a_pi_designation" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contact</span>
+            <input type="text" id="a_pi_contact" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="a_pi_email" required>
+          </div>
+        </div>
+        <div class="underline_title"><u>Researcher leading the work</u></div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" id="a_researcher_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Institute Name</span>
+            <input type="text" id="a_researcher_institute_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Qualification</span>
+            <input type="text" id="a_researcher_qualification" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Designation</span>
+            <input type="text" id="a_researcher_designation" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contact</span>
+            <input type="text" id="a_researcher_contact" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="a_researcher_email" required>
+          </div>
+        </div>
+        <div class="underline_title"><u>Name of the other participating researchers</u></div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" id="a_oresearcher_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Institute Name</span>
+            <input type="text" id="a_oresearcher_institute_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Qualification</span>
+            <input type="text" id="a_oresearcher_qualification" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Designation</span>
+            <input type="text" id="a_oresearcher_designation" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contact</span>
+            <input type="text" id="a_oresearcher_contact" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="a_oresearcher_email" required>
+          </div>
+        </div>
+        
+       <div class="form_section">SECTION–D: TENTATIVE BUDGET SUMMARY</div>
+        <div class="underline_title"><u>Tentative budget</u></div>
+        <div class="user-details">
+          <table class="table">
+              <tr id="header">
+                <th>Detail</th>
+                <th>1st Year</th>
+                <th>2nd Year</th>
+                <th>3rd Year</th>
+                <th>4th Year</th>
+                <th>Total</th>
+              </tr>
+              <tr>
+                <th>Equipment(s)</th>
+                <th><input type="text" class="inputText" id="e1"></th>
+                <th><input type="text"class="inputText" id="e2"></th>
+                <th><input type="text"class="inputText" id="e3"></th>
+                <th><input type="text"class="inputText" id="e4"></th>
+                <th><input type="text"class="inputText" id="etotal"></th>
+              </tr>
+              <tr>
+                <th>Recurring</th>
+                <th><input type="text"class="inputText" id="r1"></th>
+                <th><input type="text"class="inputText" id="r2"></th>
+                <th><input type="text"class="inputText" id="r3"></th>
+                <th><input type="text"class="inputText" id="r4"></th>
+                <th><input type="text"class="inputText" id="rtotal"></th>
+              </tr>
+              <tr>
+                <th>Travel </th>
+                <th><input type="text"class="inputText" id="t1"></th>
+                <th><input type="text"class="inputText" id="t2"></th>
+                <th><input type="text"class="inputText" id="t3"></th>
+                <th><input type="text"class="inputText" id="t4"></th>
+                <th><input type="text"class="inputText" id="ttotal"></th>
+              </tr>
+              <tr>
+                <th>contingency</th>
+                <th><input type="text"class="inputText" id="c1"></th>
+                <th><input type="text"class="inputText" id="c2"></th>
+                <th><input type="text"class="inputText" id="c3"></th>
+                <th><input type="text"class="inputText" id="c4"></th>
+                <th><input type="text"class="inputText" id="ctotal"></th>
+              </tr>
+              <tr>
+                <th>consumables</th>
+                <th><input type="text"class="inputText" id="con1"></th>
+                <th><input type="text"class="inputText" id="con2"></th>
+                <th><input type="text"class="inputText" id="con3"></th>
+                <th><input type="text"class="inputText" id="con4"></th>
+                <th><input type="text"class="inputText" id="contotal"></th>
+              </tr>
+              <tr>
+                <th>Total (in rupees)</th>
+                <th><input type="text"class="inputText" id="total1"></th>
+                <th><input type="text"class="inputText" id="total2"></th>
+                <th><input type="text"class="inputText" id="total3"></th>
+                <th><input type="text"class="inputText" id="total4"></th>
+                <th><input type="text"class="inputText" id="totaltotal"></th>
+              </tr>
+          </table>
+        </div>
+
+        <div class="form_section">SECTION –E: DETAILS OF REFEREES</div>
+        <div class="underline_title"><u>Provide name of proposed referees</u></div>
+        <div class="underline_title"><u>Referee no. 1</u></div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" id="a_r1_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Designation</span>
+            <input type="text" id="a_r1_designation" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Qualification</span>
+            <input type="text" id="a_r1_qualification" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Institute Name</span>
+            <input type="text" id="a_r1_institute_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Website</span>
+            <input type="text" id="a_r1_website" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="a_r1_email" required>
+          </div>
+        </div>
+        <div class="underline_title"><u>Referee no. 2</u></div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" id="a_r2_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Designation</span>
+            <input type="text" id="a_r2_designation" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Qualification</span>
+            <input type="text" id="a_r2_qualification" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Institute Name</span>
+            <input type="text" id="a_r2_institute_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contact</span>
+            <input type="text" id="a_r2_website" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="a_r2_email" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>  
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p id="footer_info"><i class="fas fa-phone-alt"> &nbsp;02697-265011 <b id="slash">/</b> 02697-265021</i> <i
+            class="fa fa-envelope"> &nbsp;edic@charusat.ac.in</i></p>
+    <hr>
+
+    <p id="icon"><a href="https://www.facebook.com/thecharusat/" target="_blank"><i
+                class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/thecharusat?lang=en" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.linkedin.com/school/charotar-university-of-science-&-technology-charusat-/"
+            target="_blank"><i class="fab fa-linkedin"></i></a>
+    </p>
+    <hr>
+    <p id="cc"> © 2021 EDIC </p>
+</footer>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBOc0r3Th6azEmwTIIIeVhjs20fXps0Bxg",
+    authDomain: "startupmanagementsystem.firebaseapp.com",
+    projectId: "startupmanagementsystem",
+    storageBucket: "startupmanagementsystem.appspot.com",
+    messagingSenderId: "84477079788",
+    appId: "1:84477079788:web:0c0beb5c5a26794ab9b5c9",
+    measurementId: "G-9VRZH1XNN6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+ 
+
+  //auth and firestore references
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  //update firestore settings
+  db.settings({ timestampsInSnapshots : true});
+
+</script>
+
+        <script src="apply.js"></script>
+        <script src="auth.js"></script>
+        <script src="home.js"></script>
+        <script src="login.js"></script>
+
+</body>
+</html>

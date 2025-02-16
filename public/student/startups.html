@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="startups.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="odometer-theme-default.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Our Startups</title>
+</head>
+
+<body>
+    
+    <nav class="nav">
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">
+            <img src="edic logo.jpg" alt="edic">
+            <h1><strong><a href="home.html">EDIC</a></strong></h1>
+        </div>
+        <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Startups.html" class="active">Startups</a></li>
+            <li><a href="apply.html" class="applyPage" style="display: none;">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="btn2 logged-out" style="display: none;">
+                <a href="login.html">Sign in/Sign up</a>
+            </li>
+        </ul>
+        <div class="usr logged-in">
+            <div class="btn" id="user">
+                <a class="D"><i class="fa fa-user"></i></a>
+                
+            </div>
+            <div class="drop">
+                <a class="D1" id="dash">Dashboard</a>
+                <a href="#" id="logout">Log-out</a>
+            </div>
+        </div>
+
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <section class="stats">
+        <ul class="btnwrap">
+            <li class="btn1 logged-out-res">
+                <a href="login.html">Sign in/Sign up</a>
+            </li>
+        </ul>
+        <div class="numbers">
+            <div class="nohead">EDIC in Numbers</div>
+            <hr>
+        </div>
+        <div class="no">
+            <div class="titls t1">
+                <div class="stat s1">
+                    <div class="odometer st1" id="odometer1">00</div>
+                    <h3>Entrepreneurs</h3>
+                </div>
+                <script src="odometer.min.js"></script>
+                <script type="text/javascript">
+                    setTimeout(function () {
+                        odometer1.innerHTML = 7797;
+                    })
+                </script>
+                <div class="stat s1">
+                    <div class="odometer st2" id="odometer2">00</div>
+                    <h3>Resource Persons</h3>
+                </div>
+                <script src="odometer.min.js"></script>
+                <script type="text/javascript">
+                    setTimeout(function () {
+                        odometer2.innerHTML = 211;
+                    })
+                </script>
+
+                <div class="stat s1">
+                    <div class="odometer st3" id="odometer3">00</div>
+                    <h3>lakhs seed money</h3>
+                    <h3>funded till date</h3>
+                </div>
+                <script src="odometer.min.js"></script>
+                <script type="text/javascript">
+                    setTimeout(function () {
+                        odometer3.innerHTML = 62;
+                    })
+                </script>
+
+            </div>
+            <div class="titls t1">
+                <div class="stat s2">
+                    <div class="odometer st1" id="odometer4">00</div>
+                    <h3>projects supported</h3>
+
+                </div>
+                <script src="odometer.min.js"></script>
+                <script type="text/javascript">
+                    setTimeout(function () {
+                        odometer4.innerHTML = 272;
+                    })
+                </script>
+
+                <div class="stat s2">
+                    <div class="odometer st2" id="odometer5">00</div>
+                    <h3>Project Sanctioned</h3>
+                </div>
+                <script src="odometer.min.js"></script>
+                <script type="text/javascript">
+                    setTimeout(function () {
+                        odometer5.innerHTML = 31;
+                    })
+                </script>
+
+                <div class="stat s2">
+                    <div class="odometer st3" id="odometer6">00</div>
+                    <h3>Faculty Members</h3>
+                </div>
+                <script src="odometer.min.js"></script>
+                <script type="text/javascript">
+                    setTimeout(function () {
+                        odometer6.innerHTML = 287;
+                    })
+                </script>
+
+            </div>
+            <div class="titls t1">
+                <div class="stat s3">
+                    <div class="odometer st1" id="odometer7">00</div>
+                    <h3>Registered Companies</h3>
+                </div>
+                <script src="odometer.min.js"></script>
+                <script type="text/javascript">
+                    setTimeout(function () {
+                        odometer7.innerHTML = 18;
+                    })
+                </script>
+
+                <div class="stat s3">
+                    <div class="odometer st2" id="odometer8">00</div>
+                    <h3>External Participants</h3>
+                </div>
+                <script src="odometer.min.js"></script>
+                <script type="text/javascript">
+                    setTimeout(function () {
+                        odometer8.innerHTML = 1298;
+                    })
+                </script>
+            </div>
+
+        </div>
+    </section>
+    <div class="wrap">
+        <div class="numbers">
+            <div class="nohead">Startups News</div>
+            <hr>
+        </div>
+        <div class="startups_container Ndetails">
+            
+        </div>
+    </div>
+    <footer>
+        <p id="footer_info"><i class="fas fa-phone-alt"> &nbsp;02697-265011 <b id="slash">/</b> 02697-265021</i> <i
+                class="fa fa-envelope"> &nbsp;edic@charusat.ac.in</i></p>
+        <hr>
+    
+        <p id="icon"><a href="https://www.facebook.com/thecharusat/" target="_blank"><i
+                    class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/thecharusat?lang=en" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/school/charotar-university-of-science-&-technology-charusat-/"
+                target="_blank"><i class="fab fa-linkedin"></i></a>
+        </p>
+        <hr>
+        <p id="cc"> © 2021 EDIC </p>
+    </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+    
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyBOc0r3Th6azEmwTIIIeVhjs20fXps0Bxg",
+          authDomain: "startupmanagementsystem.firebaseapp.com",
+          projectId: "startupmanagementsystem",
+          storageBucket: "startupmanagementsystem.appspot.com",
+          messagingSenderId: "84477079788",
+          appId: "1:84477079788:web:0c0beb5c5a26794ab9b5c9",
+          measurementId: "G-9VRZH1XNN6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+       
+      
+        //auth and firestore references
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+      
+        //update firestore settings
+        db.settings({ timestampsInSnapshots : true});
+      
+      </script>
+              <script src="/public/student/startups.js"></script>
+              <script src="auth.js"></script>
+              <script src="home.js"></script>
+              <script src="login.js"></script>
+
+</body>
+
+</html>

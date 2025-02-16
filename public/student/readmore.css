@@ -1,0 +1,135 @@
+.bwrap{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.bwrap2{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.pos{
+
+    display: flex;
+    justify-content: right;
+}
+
+.back{
+    display: block;
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    cursor: pointer;
+    margin-left: 98%;
+}
+
+.back:hover{
+    color: rgb(94, 94, 94);
+}
+
+form{
+    pointer-events: none;
+}
+
+form .button{
+    width: 40%;
+    pointer-events: all;
+}
+
+form .button1{
+    width: 40%;
+    height: 45px;
+    margin: 35px 0;
+    pointer-events: all;
+  }
+  form .button1 input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  }
+  form .button1 input:hover{
+   /* transform: scale(0.99); */
+   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+   }
+
+   form .button3{
+    width: 40%;
+    pointer-events: all;
+}
+
+form .button3{
+    width: 40%;
+    height: 45px;
+    margin: 35px 0;
+    pointer-events: all;
+    margin-top: 0;
+    
+  }
+  form .button3 input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  }
+  form .button3 input:hover{
+   /* transform: scale(0.99); */
+   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+   }
+  
+
+form .button2{
+    width: 40%;
+    height: 45px;
+    margin: 35px 0;
+    margin-top: 0;
+    pointer-events: all;
+    
+  }
+  form .button2 input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  }
+  form .button2 input:hover{
+   /* transform: scale(0.99); */
+   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+   }
